@@ -53,7 +53,6 @@ app.jinja_env.filters['datetime'] = format_datetime
 def index():
   return render_template('pages/home.html')
 
-
 #  Venues
 #  ----------------------------------------------------------------
 
@@ -142,7 +141,6 @@ def create_venue_submission():
     )
     
 
-    
   # TODO: modify data to be the data object returned from db insertion
 
     db.session.add(venue)
